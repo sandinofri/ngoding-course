@@ -1,6 +1,6 @@
 import NavbarComponent from "./component/NavbarComponent";
 import Footer from "./component/Footer";
-import { Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import KelasPage from "./pages/KelasPage";
 import Faq from "./component/Faq";
@@ -10,6 +10,7 @@ function App() {
   return (
     <div>
       <NavbarComponent/>
+      <HomePage/>
       <Routes>
         <Route path="/" Component={HomePage} />
         <Route path="/kelas" Component={KelasPage} />
