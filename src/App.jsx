@@ -10,13 +10,12 @@ function App() {
   return (
     <div>
       <NavbarComponent/>
-      <HomePage/>
       <Routes>
-        <Route path="/" Component={HomePage} />
-        <Route path="/kelas" Component={KelasPage} />
-        <Route path="/testimonial" Component={Testimonialpage} />
-        <Route path="/faq" Component={Faq} />
-        <Route path="/syaratketen" Component={SyaratKententuan} />
+        <Route path="*" element={<HomePage/>} />
+        <Route path="/kelas" element={<KelasPage/>} />
+        <Route path="/testimonial" element={<Testimonialpage/>} />
+        <Route path="/faq" element={<Faq/>} />
+        <Route path="/syaratketen" element={<SyaratKententuan/>} />
       </Routes>
       <Footer/>
     </div>
